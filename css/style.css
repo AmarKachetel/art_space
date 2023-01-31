@@ -1,0 +1,726 @@
+@media screen and (min-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+/*EXPORTATION DE LA POLICE  DU SITE */
+@font-face {
+    font-family: amar;
+    src: url(../assets/fonts/FreeSans.ttf);
+  }
+ 
+/*CSS DE LA NAVIGATION DE LA PAGE*/
+.mainHeader{
+    padding: 20px 150px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+ul li{/*LES MARGES ENTRES LES DIFERENTS ITEMS DE LA LISTES */
+    margin-left: 1rem;
+}
+ul li a{/*COULEUR ET ENLEVEMENT DES DECOLRATION DE LA LISTE*/
+    text-decoration: none;
+    color: grey;
+}
+a:hover {/*COULEUR DES ITEMS DE LA BARRE DE NAVIGATION AU SURVOL PAR LA SOURIS*/
+    color:#000;
+}
+a:active{/*COULEUR D'ARRIERE PLAN DES ITEMS DE LA BARRE DE NAVIGATION AU CLIQUE DE LA SOURIS*/
+    background-color: aqua;
+}
+/*FIN DU CSS DE LA NAVIGATION DE LA PAGE*/
+
+/* LA POLICE ET LA TAILLE DE CARACTERE*/ 
+body {
+    font-family: 'amar';
+    font-size: 1rem;
+}
+
+/*COULEUR ET L'ESPACE ENTRE LES LIGNES DES PARAGRAPHES*/
+p,q{
+    color: gray;
+    line-height: 2;
+}
+
+/*CSS DE LA L'IMAGE DE LA PAGE D'ACCUEIL TOUR*/
+#img_accueil{
+    background-image:  url(../assets/image/hero-tour.jpg );
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    color: #FFF;
+    max-width: 100%;
+}
+.ligne{/*CSS DE LA LIGNE AU DESSUS DU TITRE DE L'IMAGE D'ACCUEIL*/
+    height: 5px;
+    width: 15%;
+    background-color: #FFF;
+    margin-top: 50px;
+}
+.couleur_st{/*COULEUR DU SOUS TITRE DE L'IMAGE D'ACCUEIL*/
+    color: rgb(235, 224, 224);
+}
+
+/* CSS DU BOUTON GET STARTED*/
+.bouton1{
+    font-weight: bold;
+    border: 0;
+    line-height: 2.5;
+    padding: 5px 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+    background-color:rgb(255, 230, 0);  
+    box-shadow: inset;
+}
+.bouton1:hover {/*COULEUR DU BOUTON ET EFFETS AU SURVOL PAR LA SOURIS*/
+    background-color: rgba(159, 247, 100, 0.826);
+    box-shadow: 10px 5px 5px green;
+}
+.bouton1:active {/* COULEUR DU BOUTON ET EFFETS AU CLIQUE PAR LA SOURIS*/
+    box-shadow: 10px 5px 5px green;
+}
+/*FIN CSS DU BOUTON GET STARTED*/
+
+/* CSS DU BOUTON WATCH DEMO*/
+.bouton2{
+    font-weight: bold;
+    border: 0;
+    line-height: 2.5;
+    padding: 5px 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    border-radius: 10px;
+    background-color:transparent;  
+}
+.bouton2:hover {/*COULEUR DU BOUTON ET EFFETS AU SURVOL PAR LA SOURIS*/
+    background-color: rgba(159, 247, 100, 0.826);
+    box-shadow: 10px 5px 5px green;
+}   
+.bouton2:active {/* COULEUR DU BOUTON ET EFFETS AU CLIQUE PAR LA SOURIS*/
+    box-shadow: 10px 5px 5px green;
+}
+/*FIN CSS DU BOUTON WATCH DEMO*/
+
+/*CSS DES ICONES EN BAS DE L'IMAGE D'ACCUEIL DE LA PAGE TOUR*/
+#section2{
+   background-color: rgba(234, 227, 227, 0.438); 
+   text-align: center;
+   padding: 2%;
+}
+.imgpress{/*PADDING DES ICONES EN BAS DE L'IMAGE D'ACCUEIL DE LA PAGE TOUR*/
+    padding: 0% 3%;
+}
+/* FIN CSS DES ICONES EN BAS DE L'IMAGE D'ACCUEIL DE LA PAGE TOUR*/
+
+/*CSS SECTION 3 STUNNING DESIGNS FROM THE START*/
+#section3{
+    padding: 100px 100px 0px 100px; 
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+}
+.ligne3{
+    height: 3px;
+    width: 25%;
+    background-color: #000;
+    margin-bottom: 10px;   
+}
+#large_cinema{
+    max-width: 100%;
+}
+/*FIN CSS SECTION 3 STUNNING DESIGNS FROM THE START*/
+
+/*CSS SECTION 4 PAGES, GALLERIES, AND BLOGS.*/
+#section4{
+    background-color:rgba(234, 227, 227, 0.438);
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+}
+.ligne4{
+    height: 3px;
+    width: 20%;
+    background-color: #000;
+    margin-bottom: 10px; 
+}
+#tour{
+    max-width: 100%;
+}
+/*FIN CSS SECTION 4 PAGES, GALLERIES, AND BLOGS.*/
+
+/*CSS SECTION 5 INTRODUCING LAYOUTENGINE.*/
+#section5{
+    padding-top: 100px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column ;
+    align-items: start;
+    text-align: start;  
+}
+.ligne5{
+    height: 3px;
+    width: 23%;
+    background-color: #000;
+    margin-bottom: 10px;   
+}
+.img_section5{
+    max-width: 100%;
+    padding-top: 7%;
+    padding-bottom: 10%;  
+}
+/*FIN CSS SECTION 5 INTRODUCING LAYOUTENGINE.*/
+
+/*CSS SECTION 6 GALLERIES WITH CUTTING-EDGE CREATIVE TOOLS.*/
+#section6{
+    background-color: rgba(234, 227, 227, 0.438);
+    padding-top: 100px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column ;
+    align-items: start;
+    text-align: start;  
+}
+.ligne6{
+    height: 3px;
+    width: 23%;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+.img_section6{
+    max-width: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+/* FIN CSS SECTION 6 GALLERIES WITH CUTTING-EDGE CREATIVE TOOLS.*/
+
+/*CSS SECTION 7 STATE-OF-THE-ART BLOGGING.*/
+#section7{
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column ;
+    align-items: start;
+    text-align: start;  
+}
+.ligne7{
+    height: 3px;
+    width: 23%;
+    background-color: #000;
+    margin-bottom: 10px;  
+}
+.img_section7{
+    max-width: 100%;
+    padding-top: 2%;
+}
+.img_section7_1{
+    max-width: 100%;
+    padding-bottom: 1%;
+}
+.img_section7_2{
+   max-width: 100%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    line-height: 2;
+    padding-top: 30px;   
+}
+.cote{
+    width: 25%;
+    padding-right: 50px;
+}
+.icones_section7{/*ESPACE ENTRE LES ICONES DE LA SECTION 7*/
+    padding-right: 20px;
+}
+/*FIN CSS SECTION 7 STATE-OF-THE-ART BLOGGING.*/
+
+/*CSS SECTION 8 THE CUSTOM LOOK YOU WANT*/
+#section8{
+    background-color: rgba(234, 227, 227, 0.438);
+    padding-top: 100px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column ;
+    align-items: start;
+    text-align: start;   
+}
+.ligne8{
+    height: 3px;
+    width: 23%;
+    background-color: #000;
+    margin-bottom: 10px; 
+}
+.img_section8{
+    max-width: 100%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+/* FIN CSS SECTION 8 THE CUSTOM LOOK YOU WANT*/
+
+/*CSS SECTION 9 MOBILE SITES BUILT RIGHT IN.*/
+#section9{
+    column-count: 2;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.ligne9{
+    height: 3px;
+    width: 68%;
+    background-color: #000;
+    margin-bottom: 10px; 
+}
+.img_section9{
+    max-width: 100%;
+}
+#col1{
+  
+    padding-top: 12%;
+    padding-left: 15%;
+}
+#col2{
+   
+    padding-top: 5%;
+    padding-left: 2%;
+}
+/*FIN CSS SECTION 9 MOBILE SITES BUILT RIGHT IN.*/
+
+/*CSS SECTION 10 CONNECT WITH THE SERVICES YOU LOVE.*/
+#section10{
+    background-color: rgba(234, 227, 227, 0.438);
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-bottom: 2%;
+}
+#section10_1{
+    padding-left: 140px;
+}
+.ligne10{
+    height: 3px;
+    width: 22%;
+    background-color: #000;
+    margin-bottom: 10px; 
+}
+.img_section10{
+    max-width: 100%;
+}
+.paragraphe{
+    padding-bottom: 20px;
+}
+/*FIN CSS SECTION 10 CONNECT WITH THE SERVICES YOU LOVE.*/
+
+/*CSS SECTION 11 POWERFUL COMMENTING.*/
+#section11{
+    column-count: 2;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+}
+#section11_2{
+    padding-top:75px;
+    padding-left: 10px;
+}
+.ligne11{
+    height: 3px;
+    width: 45%;
+    background-color: #000;
+    margin-bottom: 10px; 
+}
+.img_section11{
+    max-width: 100%;
+}
+/*FIN CSS SECTION 11 POWERFUL COMMENTING.*/
+
+/*CSS SECTION 12 REAL-TIME STATISTICS FOR AUDIENCE INSIGHT.*/
+#section12{
+    background-color: rgba(234, 227, 227, 0.438);
+    padding-top: 100px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column ;
+    align-items: start;
+    text-align: start;  
+}
+.ligne12{
+    height: 3px;
+    width: 22%;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+.img_section12_2{
+    max-width: 100%;
+}
+.img_section12{
+    padding-top: 5%;
+    max-width: 100%;
+}
+.img_section12_1{
+    max-width: 100%;
+    padding-bottom: 10%;
+}
+/*FIN CSS SECTION 12 REAL-TIME STATISTICS FOR AUDIENCE INSIGHT.*/
+
+/*CSS SECTION 13 SEARCH ENGINE OPTIMIZED.*/
+#section13{
+    column-count: 2;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-bottom: 50px;
+}
+#section13_2{
+    padding-top:3px;
+}
+.ligne13{
+    height: 3px;
+    width: 45%;
+    background-color: #000;
+    margin-bottom: 10px; 
+}
+.img_section13{
+    position: absolute;
+    z-index: 1;
+    max-width: 100%;
+    clip-path:ellipse(50% 50%); 
+}
+.rob{
+    position: relative;
+    top: 45px;
+    left: 82px;
+}
+.img_section13_1{
+    max-width: 100%;
+}
+.pad_q{
+    padding-left: 75px;
+}
+/*FIN CSS SECTION 13 SEARCH ENGINE OPTIMIZED.*/
+
+/*CSS SECTION 14 CLOUD HOSTING FROM THE BEST*/
+#section14{
+    column-count: 2;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-bottom: 50px;
+}
+#section14_2{
+    padding-top:5px;
+    padding-left: 50px;
+
+}
+.ligne14{
+    height: 3px;
+    width: 45%;
+    background-color: #000;
+    margin-bottom: 10px; 
+}
+.img_section14{
+    max-width: 100%;
+}
+.img_section14_1{
+    max-width: 100%;
+}
+/*FIN CSS SECTION 14 CLOUD HOSTING FROM THE BEST*/
+
+/*CSS DU FOOTER */
+.liste{/*CSS DES LISTES DU FOOTER*/
+    text-align: left;
+    line-height: 2;
+    display:block;
+    padding: 0 70px 0 70px;
+    
+  }
+.footr{/*CSS DU FOOTER L'ARRIERE PLAN LA COULEUR DU TEST ET LES PADDINGS*/
+    color: #FFF;
+    background-color: #000;
+    padding-top: 50px;
+    padding-left: 150px;
+ 
+}
+.liste2{ /*CSS DE LA LISTE 2 AU Y A LE BOUTON*/
+    color: grey;
+    padding-top: 15px;
+    padding-left:50px;
+}
+footer a:hover{/*CSS DES ITEMS DES LISTES DU FOOTER AU SURVOL DE LA SOURIS*/
+    color: #FFF;
+}
+footer h4{
+    padding-left: 18px;
+}
+/*CSS BOUTON TRY IT FREE DU FOOTER*/
+.bouton3{/*CSS DU BOUTON DU FOOTER*/
+    font-weight: bold;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 40px;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+    background-color:#FFF;  
+}
+.bouton3:hover {/*CSS DU BOUTON FOOTER AU SURVOL DE LA SOURIS*/
+    background-color: rgb(236, 224, 115);
+}
+.bouton3:active {/*CSS DU BOUTON FOOTER AU CLIQUE DE LA SOURIS*/
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/*FIN DU CSS DU FOOTER*/
+
+
+/*PAGE PRECING*/
+/*PAGE PRECING*/
+/*PAGE PRECING*/
+/*PAGE PRECING*/
+/*PAGE PRECING*/
+/*PAGE PRECING*/
+/*PAGE PRECING*/
+
+
+/*CSS DE LA PAGE PRECING*/
+
+/* CSS POUR LA VIDEO DE LA PAGE PRECING*/
+#background-video {
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/*FIN CSS POUR LA VIDEO DE LA PAGE PRECING*/
+
+/*CSS POUR LE CONTENU DE CE QUI Y A AU DESSUS DE LA VIDEO*/
+.content{ /*CSS DU CONTENU DE S QUI A AU DESSUS DE LA VIDEO DE LA PAGE PRECING*/
+    color: #FFF;
+    z-index: 5;
+    position: relative;
+    top: -18rem;
+    width: max-content;
+    margin: auto;
+}
+.bouton4{/*CSS DU BOUTON DE LA PGE PRECING */
+    width: max-content;
+    margin: auto;
+}
+.lignee{/*CSS DE LA LIGNE DE LA SECTION AU Y A LA VIDEO DE LA PAGE PRECING*/
+    width: max-content;
+    margin: auto;
+    height: 3px;
+    width: 45%;
+    background-color:#FFF;
+}
+/*FIN CSS POUR LE CONTINUE DE CE QUI Y A AU DESSUS DE LA VIDEO*/
+
+/*CSS page precing*/
+#page_pricing{
+    margin: 0 200px 0 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*CSS COLONNE 1*/
+.col1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;    
+}
+/*CSS COLONNE 2*/
+.col2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   
+}
+/*CSS COLONNE 3 EN BAS DE LA SECTION 8 MO*/
+.col3{
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 83%;   
+    padding-bottom: 20%;
+}
+/*CSS COLONNE 4 EN BAS DE LA SECTION 16 MO*/
+.col4{
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    padding-bottom: 20%;
+}
+ /*CSS ligne Standard*/
+.lignee2{/*CSS LIGNE EN BAS DE STANDARD*/
+    width: max-content;
+    margin: auto;
+    height: 2px;
+    width: 60%;
+    background-color:#FFF;
+}
+.lignee2_1{/*CSS LIGNE EN BAS UNLIMED*/
+    width: max-content;
+    margin: auto;
+    height: 2px;
+    width: 62%;
+    background-color:#FFF;
+}
+/*CSS DES DEUX SECTIONS NOIRS DE LA PAGE PRECING*/
+.noir{
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 10% 15%;
+}
+/*CSS DES DEUX SECTIONS GRISSES DE LA PAGE PRECING*/
+.gris{
+    background-color:  rgba(234, 227, 227, 0.438);
+    color:gray;
+    text-align: center;   
+}
+ .standard{/*CSS Standard*/
+    font-size: 1.4rem;
+    letter-spacing: .4rem;
+ }
+ .dollar{/*CSS Signe dollar*/
+    font-size: 1.4rem;
+    color: gray; 
+ }
+ 
+ .huit{/*CSS chiffre huit*/
+    font-size: 6rem;  
+ }
+
+ .mo{ /*CSS Signe MO*/
+    font-size: 1.4rem;
+    color: gray;
+ }
+ .sous_titre{/*CSS sous titre en bas de 8MO*/
+    color: gray;
+    text-align: center;
+ }
+ /*CSS DES LIGNES DES ARTICLES DE LA PAGE PRECING*/
+ .lignee3{
+    height: 2px;
+    width: 70%;
+    background-color: #000;
+}
+.lignee4{
+    height: 2px;
+    width: 90%;
+    background-color: #000;
+}
+.lignee5{
+    height: 2px;
+    width: 62%;
+    background-color: #000;
+}
+.lignee6{
+    height: 2px;
+    width: 67%;
+    background-color: #000;
+}
+.lignee7{
+    height: 2px;
+    width: 68%;
+    background-color: #000;
+}
+.lignee8{
+    height: 2px;
+    width: 38%;
+    background-color: #000;
+}
+.lignee9{
+    height: 2px;
+    width: 56%;
+    background-color: #000;
+}
+.lignee10{
+    height: 2px;
+    width: 43%;
+    background-color: #000;
+}
+.lignee11{
+    height: 2px;
+    width: 62%;
+    background-color: #000;
+}
+.lignee12{
+    height: 2px;
+    width: 50%;
+    background-color: #000;
+}/*FIN CSS DES LIGNES DES ARTICLES DE LA PAGE PRECING*/
+
+/*CSS DES DEUX ICONES FREE DE LA PAGE PRECING*/
+.free{
+    background-color: green;
+    color: #FFF;
+    padding: 12px;
+    clip-path:ellipse(50% 50%);
+}
+
+.free1{
+    background-color: green;
+    color: #FFF;
+    padding: 5px 20px;
+}
+.free2{
+    background-color: green;
+    color: #FFF;
+    padding: 30px 30px;
+    padding-bottom: 20px;
+}
+
+/*CSS INFO BULLE AU SURVOL DE LA SOURIS SUR 500 GB BANDWIDTH*/
+a{
+    text-decoration: none;
+    color: gray;
+}
+a span{ 
+    position:absolute;
+    color:#FFF;
+    background:rgba(0,0,0,.9);
+    padding: 30px;
+    transform:scale(0) rotate(-12deg);  
+    transition:all .25s; 
+    opacity:0; 
+    text-align: left;            
+}
+
+a:hover span, a:focus span{
+    transform:scale(1) rotate(0); 
+    opacity:1;       
+}/*FIN CSS INFO BULLE AU SURVOL DE LA SOURIS SUR 500 GB BANDWIDTH*/
+
+/*COULEYR DES 4 TITRES APRES 16MO EN NOIR ET EN GRAS*/
+.gras{
+    color: #000;
+}
+/*CSS DU CERCLE MOST POPULAR QUI EST AU DESSUS A DROITE DE LA SECTION 16 MO*/
+.most_popular{
+    background-color: green;
+    color: #FFF;
+    padding: 45px 0px;
+    clip-path:ellipse(50% 50%);
+    position: relative;
+    top: 45px;
+    left:935px;
+}
+
+
+
